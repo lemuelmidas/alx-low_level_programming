@@ -1,3 +1,8 @@
+/*
+ * title: 4-puts.c
+ * Author: Emmanuel Justine
+ */
+
 #include <stdio.h>
 
 /**
