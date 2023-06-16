@@ -1,11 +1,16 @@
+/*
+ * File title: 4-puts.c
+ * Author: Emamniuel Justine
+ */
+
 #include <stdio.h>
 
 /**
- * a program which main prints: "Programming is like building a multilingual
- * puzzle, followed by a new line.
- * it should return 0
+ * main - Prints "Programming is like building a multilingual
+ *                puzzle, followed by a new line.
+ *
+ * Return: Always 0.
  */
-
 int main(void)
 {
   puts("\"Programming is like building a multilingual puzzle");
