@@ -10,10 +10,10 @@
 
 int main(void)
 {
-	int i;
+	int r;
 
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
+	for (r = 0; r < 10; r++)
+		printf("%d", r);
 	printf("\n");
 
 	return (0);
