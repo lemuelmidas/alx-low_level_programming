@@ -1,14 +1,14 @@
 #include <unistd.h>
 
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
+ * main- read the code
  *
- * Return: always 0.
- * On error, -1 is returned, and errno is set appropriately.
+ * Return: always 0
  */
+
 int _putchar(char c)
 {
-        write(1, c, sizeof(c)-1);
+        char c[] = "_putchar\n";
+	write(1, c, sizeof(c)-1);
 	return (0);
 }
