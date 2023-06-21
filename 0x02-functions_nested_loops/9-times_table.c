@@ -1,8 +1,7 @@
 #include "main.h"
 
 /**
- * times_table- check the code
- * 
+ * times_table - check the code
  * Return: Nothing
  */
 void times_table(void)
