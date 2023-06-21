@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * main: check the code
- * Return: 1 or 0 in otherwise.
+ * _isalpha - check the code
+ * @c: an integer
+ * Return: 1 or 0 if otherwise.
  */
 int _isalpha(int c)
 {
