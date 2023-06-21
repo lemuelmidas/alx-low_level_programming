@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * add - check the code
  *
  * Return: result of i + j
  */
