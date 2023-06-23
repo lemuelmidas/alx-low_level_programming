@@ -1,0 +1,15 @@
+#include "main.h"
+
+/**
+ * print_numbers - check the code,
+ *
+ * Return: Always 0
+ */
+void print_numbers(void)
+{
+	int p = '0';
+
+	for (; p <= '9'; p++)
+		_putchar(p);
+	_putchar('\n');
+}
