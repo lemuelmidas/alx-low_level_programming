@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * string_toupper - changes lower case string to upper case strin
+ * @s: an input string
+ * Return: char pointer to converted string
+ */
+char *string_toupper(char *s)
+{
+  char *ptr = s;
+
+  while (*s)
+    {
+      if (*s >= 'a' && *s <= 'z')
+	*s -= 32;
+      s++;
+    }
+  return (ptr);
+}
