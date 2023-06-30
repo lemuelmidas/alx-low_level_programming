@@ -8,7 +8,6 @@
  * Return: A pointer to the resulting string
  */
 char *_strncat(char *dest, char *src, int n)
-char *_strncat(char *dest, char *src, int n)
 {
 	int srclength = 0, i = 0;
 	char *temp = dest, *start = src;
