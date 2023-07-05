@@ -1,0 +1,29 @@
+#include "main.h"
+int _sqrt(int a, int b);
+
+/**
+ * _sqrt_recursion - to return the value of square root of n.
+ * @n: input integer
+ * Return: The square root of n
+ */
+int _sqrt_recursion(int n)
+{
+	if (n < 0)
+		return (-1);
+	return (_sqrt(1, n));
+}
+
+/**
+ * _sqrt - find square root
+ * @a: previous value
+ * @b: square root value
+ * Return: the square root
+ */
+int _sqrt(int a, int b)
+{
+	if (a > b)
+		return (-1);
+	else if (a * a == b)
+		return (a);
+	return (_sqrt(a + 1, b));
+}
