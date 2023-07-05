@@ -1,4 +1,5 @@
 #include "main.h"
+int is_divisible(int dsor, int dend);
 
 /**
  * is_prime_number - to check if a number is prime.
@@ -7,16 +8,30 @@
  */
 int is_prime_number(int n)
 {
-        int i;
-        if (n <= 1) {
-            return 0;
-        }
-	
-        for (i = 2; i * i <= n; i++) {
-            if (n % i == 0) {
-                return 0;
-            }
-        }
+	int div = 2;
 
-        return 1;
+	if (n <= 1)
+		return (0);
+
+	if (n <= 3)
+		return (1);
+
+	return (is_divisible(n, div));
+}
+
+/**
+ * is_divisible - to check if num is divisible
+ * @dsor: the divisor
+ * @dend: the dividend
+ * Return: 1 if num is divisible or 0 if numis not divisible
+ */
+int is_divisible(int dsor, int dend)
+{
+	if (dsor % dend == 0)
+		return (0);
+
+	if (dend == dsor / 2)
+		return (1);
+
+	return (is_divisible(dsor, dend + 1));
 }
