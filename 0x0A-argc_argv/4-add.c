@@ -1,3 +1,4 @@
+#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -16,7 +17,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 0; argv[argc][i]; i++)
 		{
-			if (!(digit(argv[argc][i])))
+			if (!(isdigit(argv[argc][i])))
 			{
 				printf("Error\n");
 				return (1);
