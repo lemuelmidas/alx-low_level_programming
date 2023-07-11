@@ -1,0 +1,42 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - to return a pointer to a newly allocated space in memory
+ * @str an input pointer of the string to copy
+ * Return: if present, a pointer to new string or NULL if its str is NULL
+ */
+char *_strdup(char *str)
+{
+	char *new_str, *begin;
+	int i, length = 0;
+
+	if (str == NULL)
+		return (NULL);
+
+	begin = str;
+
+	while (*str)
+	{
+		length++;
+		str++;
+	}
+
+	str = begin;
+	new_str = malloc(sizeof(char) * (length + 1));
+	begin = new_str;
+
+	if (new_str != NULL)
+	{
+		for (i = 0; i < length; i++)
+		{
+			new_str[i] = *str;
+			str++;
+		}
+		new_str[i] = '\0';
+		return (begin);
+	}
+	else
+		return (NULL);
+}
