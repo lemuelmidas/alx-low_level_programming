@@ -2,14 +2,14 @@
 #include <stdio.h>
 
 /**
- * bits_flipper - To return the number of bits you would
+ * flip_bits - To return the number of bits you would
  * need to flip to get from one number to another
  * @n: Number
  * @m: Number
  *
  * Return: Numbers of bits that n have to change for be equal to m
  **/
-unsigned int bits_flipper(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
 	int a, count;
 

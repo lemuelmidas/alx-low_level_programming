@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * output_binary - To print a binary number without % or /
+ * print_binary - To print a binary number without % or /
  * @n: The binary number to be printed
  * Return: Null
  */
-void output_binary(unsigned long int n)
+void print_binary(unsigned long int n)
 {
 	unsigned int flag = 0, max = 32768; /* 1000 0000 0000 0000 */
 
